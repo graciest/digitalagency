@@ -1,0 +1,581 @@
+
+body {
+background-color: #f5fdff;
+font-family: 'DM Sans', sans-serif;
+}
+
+.hero{
+    width: 100%;
+    height: 1300px;
+}
+
+/* Класс MASK отвечает за расположение меню, dashboard и header */
+
+.mask{
+    background-image: url(../images/bg-hero.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 900px;
+    width: 100%;
+}
+
+/* header - меню */
+
+.header{
+    margin-top: 30px;
+    height: 100px;
+    display: inline-block;
+}
+
+.logo{
+    margin-top: 10px;
+    width: 180px;
+}
+
+.header ul {
+    height: 50px;
+  }
+  
+.header ul li {
+    height: inherit;
+    display: inline-block;
+    flex: 0 0 1;
+    padding-top: 25px;
+  }
+  
+  .header ul li:last-child {
+    margin-left: 320px;
+  }
+  
+  .header ul li:not(:last-child){
+    padding-top: 18px;
+  }
+  
+  .header ul li:first-child {
+    justify-content: flex-end;
+    margin-left: 10px;
+    float: left;
+    margin-right: 320px;
+    margin-left: 20px;
+    /*padding-right: 0%;*/
+  }
+
+  .header ul li a{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    padding-right: 10px;
+    font-size:16px; 
+  }
+
+  .header ul li a:hover{
+    color: #ffff00;
+    font-weight: normal;
+  }  
+
+ .header ul li a:active{
+    color:#eeff00;
+ }
+
+ .get_started {
+    width: 134px;
+    height: 51px;
+    background-color: white;
+    color: #57B3FE;
+    text-decoration: none;
+    border-radius: 60px;
+    border: none;
+ }
+
+ .get_started {color: #57B3FE; font-size: 14px;}
+
+ .title {
+    text-align: center; 
+    color: white;
+    margin-top: 80px;
+    font-size: 58px;
+    font-family: 'DM Sans';
+font-style: normal;
+font-weight: 500;
+}
+
+.subtitle{
+    color: white;
+    text-align: center;
+    font-family: 'DM Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 34px;
+    opacity: 0.8;
+}
+
+.get_link{
+    text-align: center;
+}
+
+.get_started_two{
+    margin-top: 30px;
+    color: #57B3FE; font-size: 16px;
+    width: 164px;
+    height: 51px;
+    background-color: white;
+    color: #57B3FE;
+    text-decoration: none;
+    border-radius: 60px;
+    border: none;
+}
+
+.dashboard{
+margin-top: 20px;
+}
+
+.dashboard_img{
+    width: 1100px;
+    cursor: pointer;
+    pointer-events: none; /* Это запрет на перетаскивания картинки */
+    animation: moveUpDown 1.5s ease-in-out infinite;
+}
+
+@keyframes moveUpDown {
+    0% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-10px);
+    }
+    100% {
+      transform: translateY(0);
+    }
+  }
+
+/* Вторая секция features */
+
+#features {
+    height: 970px;
+    background-image: url(../images/bg-get.png);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.features_title p{
+    color: #00A077;
+    font-family: 'DM Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 122%;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    opacity: 0.5;
+}
+
+.features_title h1{
+    font-family: 'DM Sans';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 48px;
+    line-height: 122%;
+    color: #3B3E43;
+}
+
+
+
+.ft_card{   
+    background: #FFFFFF;
+    box-shadow: 0px 20px 50px rgba(59, 62, 67, 0.05);
+    border-radius: 15px;
+    width: 320px;
+    height: 315px;
+    margin-bottom: 25px;
+    border-radius: 15px;
+    text-align: left;
+    display: flex;
+flex-direction: column;
+}
+
+.icon{
+    float: left;
+    text-align: left;
+    padding-top: 20px;
+    margin-left: 10px;
+}   
+
+.icon:hover{
+    cursor: pointer;
+    opacity: 0.9;
+}
+
+
+.ft_card_text{
+}
+
+.ft_card_text h2{
+font-family: 'DM Sans';
+font-style: normal;
+font-weight: 700;
+font-size: 22px;
+line-height: 30px;
+color: #3B3E43;
+margin-left: 30px;
+}
+
+.ft_card_text p{
+    padding-top: 10px;
+font-family: 'DM Sans';
+font-style: normal;
+font-weight: 700;
+font-size: 14px;
+line-height: 24px;
+color: #595e64ca;
+text-align: left;
+margin-left: 30px;
+}
+
+/* process section */
+
+#process {
+    background-image: url(../images/process-bg.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 1600px;
+    width: 100%;
+}
+
+.titles {
+    text-align: center;
+    padding-top: 190px;
+}
+
+.pr_subtitle {
+    font-family: 'DM Sans';
+font-style: normal;
+font-weight: 700;
+font-size: 12px;
+line-height: 122%;
+letter-spacing: 0.15em;
+text-transform: uppercase;
+color: #FFFFFF;
+opacity: 0.5;
+}
+
+.pr_title{
+    font-family: 'DM Sans';
+font-style: normal;
+font-weight: 500;
+font-size: 48px;
+line-height: 122%;
+/* identical to box height, or 59px */
+color: #FFFFFF;
+}
+
+.pr_subtitle2{
+    font-family: 'DM Sans';
+font-style: normal;
+font-weight: 400;
+font-size: 20px;
+line-height: 34px;
+color: #FFFFFF;
+
+}
+
+.process_promo{
+    margin-top: 40px;
+width: 1170px;
+height: 323px;
+background: #FFFFFF;
+box-shadow: 0px 20px 50px rgba(59, 62, 67, 0.05);
+border-radius: 15px;
+}
+
+.process_img1{
+width: 509px;
+height: 319px;
+padding: 10px;
+pointer-events: none; 
+}
+
+.process_img2 {
+    pointer-events: none;  
+    width: 509px;
+    height: 319px;
+    padding: 10px;
+}
+
+.process_img3{
+    pointer-events: none; 
+    width: 490px;
+    height: 319px;
+    padding: 10px;
+}
+
+.process_text{
+ margin-left: 20px;
+}
+
+.icon2{
+    float: left;
+    padding-top: 70px;
+}   
+
+.icon2:hover{
+    cursor: pointer;
+    opacity: 0.9;
+}
+
+.process_text h2{
+    font-family: 'DM Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 30px;
+    color: #3B3E43;  
+}
+
+.process_text p{
+    font-family: 'DM Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: #595E64;
+}
+
+/* Brands Section */
+
+#brands {
+height: 867px;
+background-color: #F9F8FF;;
+}
+
+.brands_title {
+    text-align: center;
+    padding-top: 200px;
+}
+
+.brands_title  p {
+font-family: 'DM Sans';
+font-style: normal;
+font-weight: 700;
+font-size: 12px;
+line-height: 122%;
+letter-spacing: 0.15em;
+text-transform: uppercase;
+color: #00A077;
+opacity: 0.5;
+}
+
+.brands_title h1 {
+font-family: 'DM Sans';
+font-style: normal;
+font-weight: 500;
+font-size: 48px;
+line-height: 122%;
+color: #3B3E43;
+}
+
+.company {
+    margin-top: 32px;
+    text-align: center;
+}
+
+.company img{
+    width: 1100px;
+    height: 226px;
+    pointer-events: none; 
+}
+
+.brands_end{
+    margin-top: 50px;
+    text-align: center;
+    font-family: 'DM Sans';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 148%;
+color: #424A4D;
+}
+
+/* working section */
+
+#working{
+    background-image: url(../images/base-bg.png);
+    height: 760px;
+}
+
+.working_text{
+    margin-top: 100px;
+}
+
+.working_text b{
+font-family: 'DM Sans';
+font-style: normal;
+font-weight: 700;
+font-size: 12px;
+line-height: 122%;
+/* identical to box height, or 15px */
+letter-spacing: 0.15em;
+text-transform: uppercase;
+color: #FFFFFF;
+opacity: 0.5;
+}
+
+.working_text h1{
+    margin-top: 24px;
+    font-family: 'DM Sans';
+font-style: normal;
+font-weight: 500;
+font-size: 48px;
+line-height: 122%;
+color: #FFFFFF;
+}
+
+.working_text p{
+    margin-top: 24px;
+    font-family: 'DM Sans';
+font-style: normal;
+font-weight: 400;
+font-size: 20px;
+line-height: 34px;
+color: #FFFFFF;
+}
+
+.get_started_3{
+    margin-top: 25px;
+    color: #57B3FE; font-size: 16px;
+    width: 164px;
+    height: 51px;
+    background-color: white;
+    color: #57B3FE;
+    text-decoration: none;
+    border-radius: 60px;
+    border: none;
+}
+
+#working img{
+    width: 698px;
+    height: 515px;
+    pointer-events: none; 
+    animation: moveUpDown 2s ease-in-out infinite;
+    padding-left: 100px;
+}
+
+/* Подвал - footer */
+
+footer {
+    height: 241px;
+    background-color: #0D0D0D;
+    text-align: center;
+}
+
+.header-footer{
+    margin-top: 55px;
+    display: inline-block;
+}
+
+.logo-footer{
+    width: 180px;
+}
+
+.header-footer ul {
+    height: 50px;
+  }
+  
+  .header-footer ul li {
+    height: inherit;
+    display: inline-block;
+    flex: 0 0 1;
+    padding-top: 35px;
+    margin-right: 32px;
+  }
+  
+  .header-footer ul li:last-child {
+
+  }
+  
+  .header-footer ul li:not(:last-child){
+
+  }
+  
+  .header-footer ul li:first-child {
+    justify-content: flex-end;
+    float: left;
+    margin-right: 80px;
+    /*padding-right: 0%;*/
+ }
+
+  .header-footer ul li a{
+    font-family: 'DM Sans';
+font-style: normal;
+font-weight: 500;
+font-size: 16px;
+line-height: 100%;
+color: rgba(255, 255, 255, 0.8);
+flex: none;
+order: 1;
+flex-grow: 0;
+margin-top: 20px;
+  }
+
+  .header-footer ul li a:hover{
+    color: #ffff00;
+    text-decoration: none;
+  }  
+
+ footer hr{
+	padding: 0;
+	height: 0;
+	border: none;
+	opacity: 0.15;
+    border: 1px solid #FFFFFF;
+    height: 0.1px;
+    width: 80%;
+ }
+
+ .link-social {
+    margin-left: 60px;
+    margin-right:5px;
+ }
+
+ footer a{
+    margin-top: 10px;
+ }
+ 
+ .private{
+    display:inline-flex;
+ }
+
+.private-p{
+    margin-left: 50px;
+    font-family: 'DM Sans';
+font-style: normal;
+font-weight: 400;
+font-size: 15px;
+line-height: 25px;
+color: rgba(255, 255, 255, 0.8);
+}
+
+ .links-private {
+    margin-left: 800px;
+ }
+
+ .links-private a{
+    font-family: 'DM Sans';
+font-style: normal;
+font-weight: 400;
+font-size: 15px;
+line-height: 20px;
+text-decoration: none;
+color: rgba(255, 255, 255, 0.8);
+margin-left: 24px;
+ }
+
+ .links-private a:hover{
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.851);
+ }
+
+ .img-link-soc:hover{
+opacity: 0.9;
+ }
